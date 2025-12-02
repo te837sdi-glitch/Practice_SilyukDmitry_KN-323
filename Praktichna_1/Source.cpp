@@ -98,3 +98,9 @@ istream& operator>>(istream& in, Abiturient& p)
 
 	return in;
 }
+
+
+
+
+
+

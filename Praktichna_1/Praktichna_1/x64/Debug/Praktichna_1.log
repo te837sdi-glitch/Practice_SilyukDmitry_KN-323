@@ -1,4 +1,4 @@
 ﻿  Praktichna_1.cpp
   Source.cpp
   Generating Code...
-  Praktichna_1.vcxproj -> D:\C++\ПрактикаООП\P_1\Practice_SilyukDmitry_KN-323\Praktichna_1\x64\Debug\Praktichna_1.exe
+D:\C++\ПрактикаООП\P_1\Practice_SilyukDmitry_KN-323\Praktichna_1\Source.cpp(99,1): error C4716: 'operator>>': must return a value
