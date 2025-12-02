@@ -1,7 +1,6 @@
-#include "Header.h" // Включаємо ваш файл заголовка
+#include "Header.h" 
 #include <iostream>
 
-// Конструктор за замовчуванням
 Abiturient::Abiturient() :
 	id(0),
 	name("N/A"),
@@ -15,7 +14,6 @@ Abiturient::Abiturient() :
 {
 }
 
-// Конструктор з параметрами
 Abiturient::Abiturient(int _id, const std::string& _name, const std::string& _surname,
 	const std::string& _paternal, const std::string& _adres, int _phone,
 	int _year_pass, int _number_NMT, int _pin_code) :
@@ -30,8 +28,20 @@ Abiturient::Abiturient(int _id, const std::string& _name, const std::string& _su
 	pin_code(_pin_code)
 {
 }
+bool Abiturient::operator==(const Abiturient& other) const
+{
+	return (id == other.id &&
+		name == other.name &&
+		surname == other.surname &&
+		paternal == other.paternal &&
+		adres == other.adres &&
+		phone == other.phone &&
+		year_pass == other.year_pass &&
+		number_NMT == other.number_NMT &&
+		pin_code == other.pin_code);
+}
 
-// Конструктор копіювання
+
 Abiturient::Abiturient(const Abiturient& other) :
 	id(other.id),
 	name(other.name),
